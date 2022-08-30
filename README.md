@@ -15,3 +15,5 @@ https://www.bjcp.org/bjcp-style-guidelines/
 
 
 ### TABLEU
+- https://public.tableau.com/app/profile/bassem.fadlia/viz/BeerClassificationProject/BeerProjectStory
+- https://public.tableau.com/app/profile/bassem.fadlia/viz/BeerClassificationProjectv3/BeerProjectOriginsMapStory
