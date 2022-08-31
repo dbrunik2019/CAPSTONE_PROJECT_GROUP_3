@@ -28,7 +28,7 @@ def predict():
         test_data = [Original_gravity, Final_gravity, Alcohol_content, SRM, IBU]
         prediction = model_from_pickle.predict_proba([test_data])
         [new_list] = prediction
-        style_family_id = new_list.argmax() + 1 
+        style_family_id = new_list.argmax() 
         beer_name = beer_data.name[style_family_id]
         beer_overall = beer_data.overall_impression[style_family_id]
         beer_smell = beer_data.aroma[style_family_id]
