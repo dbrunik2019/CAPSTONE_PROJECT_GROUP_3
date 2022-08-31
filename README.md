@@ -1,7 +1,7 @@
 # CAPSTONE_PROJECT_GROUP_3
 CAPSTONE_PROJECT_GROUP_3
 # Description of communication protocols 
-tbd
+SLACK
 
 ### google slides 
 https://docs.google.com/presentation/d/1NSmsko7QyUDvWG8biA93AGo-nKg8491ojXHUtNBflWU/edit?usp=sharing
