@@ -6,8 +6,11 @@ tbd
 ### google slides 
 https://docs.google.com/presentation/d/1NSmsko7QyUDvWG8biA93AGo-nKg8491ojXHUtNBflWU/edit?usp=sharing
 
-###  Google doc project overview (remember to lock to our group!!!)
-https://docs.google.com/document/d/1KYxxRfMH0sv6NC2pgsmrfUaJEJemolH_ntWZyBBctds/edit?usp=sharing
+### Written Analysis
+https://docs.google.com/document/d/1iUlvbVcqRpLHJogmnHbqlAMD5v2MWNczUiX1r_gwuWY/edit
+
+### Style Family Descriptions 
+https://docs.google.com/document/d/1eTzi-ZdAQ3CGFjCNDqb68_Z43MAaj2Re7gU0N-jDHJI/edit
 
 
 ### BJCP source data website 
