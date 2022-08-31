@@ -6,6 +6,9 @@ tbd
 ### google slides 
 https://docs.google.com/presentation/d/1NSmsko7QyUDvWG8biA93AGo-nKg8491ojXHUtNBflWU/edit?usp=sharing
 
+### executive summary 
+https://docs.google.com/document/d/1qNfgXPFwjp6CfSIAumMNqWCu5cxteI5q795XGnUCOMc/edit
+
 ### Written Analysis
 https://docs.google.com/document/d/1iUlvbVcqRpLHJogmnHbqlAMD5v2MWNczUiX1r_gwuWY/edit
 
