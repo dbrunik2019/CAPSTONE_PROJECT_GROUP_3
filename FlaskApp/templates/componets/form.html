@@ -1,21 +1,18 @@
-<form id="form">
-  <label for="fname">Original Gravity (OG):</label><br />
-  <input id="input" type="text" id="fname" name="fname" /><br />
+<form id = 'form' class="form-horizontal" action = "/predict/" method="post">
+  <label for="Original_gravity">Original Gravity (OG):</label><br />
+  <input id="Original_gravity" type="text" name="Original_gravity"  /><br />
 
-  <label for="fname">Final Gravity (FG):</label><br />
-  <input id="input" type="text" id="fname" name="fname" /><br />
+  <label for="Final_gravity">Final Gravity (FG):</label><br />
+  <input id="Final_gravity" type="text" name="Final_gravity" /><br />
 
-  <label for="fname">Alcohol Content (ABV):</label><br />
-  <input id="input" type="text" id="fname" name="fname" /><br />
+  <label for="Alcohol_content">Alcohol Content (ABV):</label><br />
+  <input id="Alcohol_content" type="text" name="Alcohol_content" /><br />
 
-  <label for="fname">Standard Reference Method (SRM):</label><br />
-  <input id="input" type="text" id="fname" name="fname" /><br />
+  <label for="SRM">Standard Reference Method (SRM):</label><br />
+  <input id="SRM" type="text" name="SRM" /><br />
 
-  <label for="fname">International Bitterness Units (IBU):</label><br />
-  <input id="input" type="text" id="fname" name="fname" /><br />
+  <label for="IBU">International Bitterness Units (IBU):</label><br />
+  <input id="IBU" type="text" name="IBU" /><br />
 
-  <label for="fname">Your Beer's Name:</label><br />
-  <input id="input" type="text" id="fname" name="fname" /><br />
-
-  <button id="button">Submit</button>
+  <button type="submit" class="btn btn-primary">Predict</button>
 </form>
