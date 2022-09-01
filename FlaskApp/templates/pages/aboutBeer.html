@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include 'componets/head.html' %}
-  <body>
+  <body class="bg-yellow-300 items-center font-mono">
     {% include 'componets/nav.html' %}
-      <div id="card">
-        <h1>Your Beer - {{ beer_name }}</h1>
-        <h3>{{ beer_overall }}</h3>
-        <h3>{{ beer_smell }}</h3>
-        <h3>{{ beer_taste }}</h3>
-        <h3>{{ beer_look }}</h3>
-        <p>
-        </p>
+      <div class="container mx-auto px-4 flex flex-row items-center justify-center ">
+        {% include 'componets/beer_card.html' %}
+        <div class="bg-white rounded shadow-lg items-center justify-center p-4 border-4 border-black max-w-xl m-6">
+          <img class="max-w-full rounded-lg h-auto" src="../../static/assets/{{ beer_img }}.jpg" alt={{ beer_name }}>
+        </div>
       </div>
     </div>
   </body>

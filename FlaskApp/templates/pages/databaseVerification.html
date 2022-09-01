@@ -1,7 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include 'componets/head.html' %}
-<body>
+  {% include 'componets/head.html' %}
+  <body class="bg-yellow-300 items-center font-mono">
     {% include 'componets/nav.html' %}
-</body>
+    <div
+      class="container mx-auto px-4 flex flex-col items-center justify-center mt-7"
+    >
+      <h1 class="text-2xl font-bold py-8">About our Dataset.</h1>
+      <div
+        class="bg-white rounded shadow-lg items-center justify-center p-4 border-4 border-black max-w-xl ml-6"
+      >
+        <p>
+          Craft beer sales have been increasing dramatically over the past
+          decade (and even more so since the pandemic). Doing a project on beer
+          sounded like a great idea since it is so relevant for most people. We
+          wanted to have a project that would pique the interest of people in
+          the class. The original idea came from the Beer Judge Certification
+          Program (BJCP) mobile app. It’s a fun and useful app to have on your
+          phone! The app contains over a hundred recognized beer styles and
+          explains their categories and parameters for the user. It makes it
+          easy to understand more about a certain beer and compare the
+          descriptive data to a beer that you are drinking. Eventually, we were
+          able to find a dataset on this app on Kaggle! The dataset was
+          perfectly organized and clean; we immediately knew we could use this
+          to classify beer. Afterwards, we found a dataset containing over
+          75,000 homebrewer recipes from a recipe-builder website called
+          Brewer’s Friend. This final dataset ultimately led to the project
+          becoming a craft beer style classifier for homebrewers.
+        </p>
+      </div>
+      <div
+        class="bg-white rounded shadow-lg items-center justify-center p-4 border-4 border-black max-w-xl my-6"
+      >
+        <img src="../../static/assets/data_base_one.png" />
+      </div>
+      <div
+        class="bg-white rounded shadow-lg items-center justify-center p-4 border-4 border-black max-w-xl ml-6"
+      >
+        <img src="../../static/assets/data_base_two.png" />
+      </div>
+    </div>
+  </body>
 </html>
