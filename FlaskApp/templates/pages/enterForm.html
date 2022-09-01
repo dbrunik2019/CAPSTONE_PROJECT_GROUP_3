@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include 'componets/head.html' %}
-  <body>
+  <body class="bg-yellow-300 items-center font-mono">
     <div>{% include 'componets/nav.html' %}</div>
-    <div id="formContainer">
-      <h1><strong> Group 3 Beer Project </strong></h1>
+    <div
+      class="container mx-auto px-4 flex flex-col items-center justify-center"
+    >
+      <h1 class="text-2xl font-bold py-8">What kind of beer have you made?</h1>
       {% include 'componets/form.html' %}
     </div>
   </body>

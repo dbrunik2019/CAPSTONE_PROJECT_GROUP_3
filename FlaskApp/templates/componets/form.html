@@ -1,18 +1,76 @@
-<form id = 'form' class="form-horizontal" action = "/predict/" method="post">
-  <label for="Original_gravity">Original Gravity (OG):</label><br />
-  <input id="Original_gravity" type="text" name="Original_gravity"  /><br />
+<span class="group">
+  <form
+    class="bg-red-400 group-hover:bg-red-700 shadow-lg rounded px-8 pt-6 pb-8 mb-4 border-4 border-black transition duration-300"
+    action="/predict/"
+    method="post"
+  >
+    <label
+      class="block text-black text-sm font-bold mb-1 group-hover:text-white transition duration-300"
+      for="Original_gravity"
+      >Original Gravity (OG):</label
+    >
+    <input
+      class="mb-2 shadow appearance-none border-4 border-black rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
+      id="Original_gravity"
+      type="text"
+      name="Original_gravity"
+    />
 
-  <label for="Final_gravity">Final Gravity (FG):</label><br />
-  <input id="Final_gravity" type="text" name="Final_gravity" /><br />
+    <label
+      class="block text-black text-sm font-bold mb-1 group-hover:text-white transition duration-300"
+      for="Final_gravity"
+      >Final Gravity (FG):</label
+    >
+    <input
+      class="mb-2 shadow appearance-none border-4 border-black rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
+      id="Final_gravity"
+      type="text"
+      name="Final_gravity"
+    />
 
-  <label for="Alcohol_content">Alcohol Content (ABV):</label><br />
-  <input id="Alcohol_content" type="text" name="Alcohol_content" /><br />
+    <label
+      class="block text-black text-sm font-bold mb-2 group-hover:text-white transition duration-300"
+      for="Alcohol_content"
+      >Alcohol Content (ABV):</label
+    >
+    <input
+      class="mb-2 shadow appearance-none border-4 border-black rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
+      id="Alcohol_content"
+      type="text"
+      name="Alcohol_content"
+    />
 
-  <label for="SRM">Standard Reference Method (SRM):</label><br />
-  <input id="SRM" type="text" name="SRM" /><br />
+    <label
+      class="block text-black text-sm font-bold mb-2 group-hover:text-white transition duration-300"
+      for="SRM"
+      >Standard Reference Method (SRM):</label
+    >
+    <input
+      class="mb-2 shadow appearance-none border-4 border-black rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
+      id="SRM"
+      type="text"
+      name="SRM"
+    />
 
-  <label for="IBU">International Bitterness Units (IBU):</label><br />
-  <input id="IBU" type="text" name="IBU" /><br />
-
-  <button type="submit" class="btn btn-primary">Predict</button>
-</form>
+    <label
+      class="block text-black text-sm font-bold mb-2 group-hover:text-white transition duration-300"
+      for="IBU"
+      >Color:</label
+    >
+    <input
+      class="mb-2 shadow appearance-none border-4 border-black rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
+      id="IBU"
+      type="text"
+      name="IBU"
+    />
+    <div class="flex w-full justify-center">
+      <button
+        id="button"
+        type="submit"
+        class="border-4 border-black bg-blue-200 font-bold text-black px-32 py-3 rounded-md text-1xl group-hover:text-white group-hover:bg-blue-700 transition duration-300 my-3"
+      >
+        Predict
+      </button>
+    </div>
+  </form>
+</span>

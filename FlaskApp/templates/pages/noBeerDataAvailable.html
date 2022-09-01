@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'componets/head.html' %}
+  <body class="bg-yellow-300 items-center font-mono">
+    {% include 'componets/nav.html' %}
+      <div class="container mx-auto px-4 flex flex-col items-center justify-center ">
+        <div class="bg-white rounded shadow-lg items-center justify-center p-4 border-4 border-black max-w-xl my-6">
+        <h1 class="text-2xl font-bold py-8">No beer data found :(</h1>
+        <p class="text-xs italic py-1"> * no prediction was made</p>
+        <h3 class="text-base py-2">Please navigate to the home page to input to the form.</h3>
+        <div class="flex w-full justify-center">
+        <button
+      id="button"
+      class="border-2 border-black bg-blue-500 text-white px-32 py-3 rounded-md text-1xl hover:bg-blue-700 transition duration-300 my-3"
+    >
+    <a href="/">Back to the home page</a>
+    </button>
+    </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </body>
+</html>

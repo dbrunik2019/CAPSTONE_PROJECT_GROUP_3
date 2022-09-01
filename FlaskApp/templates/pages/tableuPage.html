@@ -1,101 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include 'componets/head.html' %}
-  <body>
+  <body class="bg-yellow-300 items-center font-mono">
     {% include 'componets/nav.html' %}
-
-    <h1>Tableau dashboards</h1>
-    <div id="dashboard">
-      <div
-        class="tableauPlaceholder"
-        id="viz1661470680013"
-        style="position: relative"
-      >
-        <noscript
-          ><a href="#"
-            ><img
-              alt="Beer Project Origins Map Story "
-              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BeerClassificationProjectv3&#47;BeerProjectOriginsMapStory&#47;1_rss.png"
-              style="border: none" /></a></noscript
-        ><object class="tableauViz" style="display: none">
-          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-          <param name="embed_code_version" value="3" />
-          <param name="site_root" value="" />
-          <param
-            name="name"
-            value="BeerClassificationProjectv3&#47;BeerProjectOriginsMapStory"
-          />
-          <param name="tabs" value="no" />
-          <param name="toolbar" value="yes" />
-          <param
-            name="static_image"
-            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BeerClassificationProjectv3&#47;BeerProjectOriginsMapStory&#47;1.png"
-          />
-          <param name="animate_transition" value="yes" />
-          <param name="display_static_image" value="yes" />
-          <param name="display_spinner" value="yes" />
-          <param name="display_overlay" value="yes" />
-          <param name="display_count" value="yes" />
-          <param name="language" value="en-US" />
-          <param name="filter" value="publish=yes" />
-        </object>
+    <div
+      class="container mx-auto px-4 flex flex-col items-center justify-center"
+    >
+      <h1 class="text-2xl font-bold py-8">Tableau dashboards</h1>
+      <div class="w-full">
+        <div class="flex flex-row">
+          <div
+            class="w-1/2 bg-white rounded shadow-lg items-center justify-center p-4 border-4 border-black max-w-xl mr-6"
+          >
+            <p>
+              For our project, we created a total of two Tableau dashboards. The
+              first dashboard contains a total of four interactive visuals about
+              our beer datasets. The first visual is called “Beer count by
+              Origin, Style Family and Brew Method” and uses our recipeData.csv.
+              With this visual you can adjust the filter by changing which Style
+              Family you want displayed. The Count of Beers shows the total
+              number of homebrewer recipes for each Style Family in the
+              recipeData.csv. This is useful because it can help you understand
+              which Style Family is brewed most often by homebrewers. It’s easy
+              to see that homebrewers love making IPAs and Pale Ales! You can
+              also filter this output by country of origin. This filter can be
+              changed to numerous other countries. Origin gives you insight into
+              which country’s beers homebrewers like to make. The United States
+              ranks first, Belgium ranks second, England ranks third, Germany
+              ranks fourth, and Ireland ranks fifth. The Brew Method is a nice
+              addition to the visual as well. With this feature, we can see
+              which method of brewing is most popular for homebrewers! All Grain
+              is by far the most popular, it’s the cooler way to brew (see
+              Appendix ).
+            </p>
+            <p class="mt-2">
+              The second visualization on this dashboard is called “Top 3 Styles
+              per Style Family” and uses our recipeData.csv. This one shows
+              users the three most popular styles of an individual Style Family
+              (remember, Style Familys are made up of dozens of other beer
+              styles). So for the style family of Amber Ales, we can see that
+              the American Amber Ale is the most popular. Irish Red Ale and
+              Belgian Dubbel come in second and third. The third visualization
+              is called “US vs Non US Origins by Style Family and Style.” This
+              visual separates each Style Family by Non US Origin and US Origin.
+              After that, it tells you what beer styles are in each of those two
+              categories. It’s a great way to see how many beer styles
+              originated in the US or abroad. The visual also tells users the
+              total count of beer recipes in the dataset for all beer styles.
+            </p>
+          </div>
+          <div class="w-1/2 my-2">
+            {% include 'componets/tableu_one.html' %}
+          </div>
+        </div>
+        <div class="flex flex-row my-6">
+          <div class="w-1/2 my-2">
+            {% include 'componets/tableu_two.html' %}
+          </div>
+          <div
+            class="w-1/2 bg-white rounded shadow-lg items-center justify-center p-4 border-4 border-black max-w-xl ml-6"
+          >
+            <p>
+              The fourth visualization is called “Beer Detail.” This visual
+              helps users understand how the search parameters work with our
+              application by showing them the recipes in our dataset. It
+              provides a detailed view of the metrics we are using in our
+              classification: Color, Original Gravity, Final Gravity, ABV, and
+              IBU. The visual can also be filtered by Style Family. The fun part
+              about this visual is that it tells you names of other homebrewer
+              recipes that are similar in regards to Style Family and even
+              Styles. If users want to, they could look the names of these
+              recipes up on Brewer’s Friend and find them! The second dashboard
+              contains a total of two visualization on it. The first visual is
+              called “Top Family Style by Origin.” This one is really cool! It’s
+              a map that shows users where the beer styles in the recipeData.csv
+              originated. So if we only selected IPA, we can see that only the
+              United States and the United Kingdom had an influence on the
+              styles of IPAs. It also gives users a total count of the beer
+              recipes that are a beer style from that country of origin. The
+              second visualization is called “Beer Origins.” This visual helps
+              users understand which countries have the most popular beer styles
+              and which countries are known for their beer. Homebrewers are most
+              known for brewing beers of the United States origin and also of
+              the UK, Belgium, and Germany. The map is a great way to show what
+              we mean when we say country of origin for the style families.
+            </p>
+          </div>
+        </div>
       </div>
-      <script type="text/javascript">
-        var divElement = document.getElementById("viz1661470680013");
-        var vizElement = divElement.getElementsByTagName("object")[0];
-        vizElement.style.width = "100%";
-        vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
-        var scriptElement = document.createElement("script");
-        scriptElement.src =
-          "https://public.tableau.com/javascripts/api/viz_v1.js";
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
-    </div>
-    <div id="dashboard">
-      <div
-        class="tableauPlaceholder"
-        id="viz1661470819521"
-        style="position: relative"
-      >
-        <noscript
-          ><a href="#"
-            ><img
-              alt="Beer Project Story "
-              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BeerClassificationProject&#47;BeerProjectStory&#47;1_rss.png"
-              style="border: none" /></a></noscript
-        ><object class="tableauViz" style="display: none">
-          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-          <param name="embed_code_version" value="3" />
-          <param name="site_root" value="" />
-          <param
-            name="name"
-            value="BeerClassificationProject&#47;BeerProjectStory"
-          />
-          <param name="tabs" value="no" />
-          <param name="toolbar" value="yes" />
-          <param
-            name="static_image"
-            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BeerClassificationProject&#47;BeerProjectStory&#47;1.png"
-          />
-          <param name="animate_transition" value="yes" />
-          <param name="display_static_image" value="yes" />
-          <param name="display_spinner" value="yes" />
-          <param name="display_overlay" value="yes" />
-          <param name="display_count" value="yes" />
-          <param name="language" value="en-US" />
-          <param name="filter" value="publish=yes" />
-        </object>
-      </div>
-      <script type="text/javascript">
-        var divElement = document.getElementById("viz1661470819521");
-        var vizElement = divElement.getElementsByTagName("object")[0];
-        vizElement.style.width = "100%";
-        vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
-        var scriptElement = document.createElement("script");
-        scriptElement.src =
-          "https://public.tableau.com/javascripts/api/viz_v1.js";
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
     </div>
   </body>
 </html>
